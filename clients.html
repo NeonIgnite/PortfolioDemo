@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/all.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <ul class="nav-links">
+            <li ><a href="index.html" >Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="clients.html" class="active">Clients</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+    </nav>
+    <div id="clientsSection">
+        <div class="reviewContainer">
+            <p>"nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc"</p>
+            <div class="rate">
+                <img src="assets/images/review1.jpg" alt="">
+                <div class="stars">
+                    <div class="reviewStars">
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                    </div>
+                    <h3>Mohamed Ahmed</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="reviewContainer">
+            <p>"nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc"</p>
+            <div class="rate">
+                <img src="assets/images/review2.jpg" alt="">
+                <div class="stars">
+                    <div class="reviewStars">
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                    </div>
+                    <h3>Khaled Ashraf</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="reviewContainer">
+            <p>"nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc"</p>
+            <div class="rate">
+                <img src="assets/images/review1.jpg" alt="">
+                <div class="stars">
+                    <div class="reviewStars">
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                    </div>
+                    <h3>Mohamed Ahmed</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navLinks = document.querySelector('.nav-links');
+
+                menuToggle.addEventListener('click', function () {
+                    navLinks.classList.toggle('active');
+                });
+            });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav{
+    width: 100%;
+    height: 10vh;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+nav #logo{
+    padding: 20px;
+    padding-left: 50px;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 28px;
+    font-family: "Epilogue", sans-serif;
+}
+nav #navigationBar{
+    padding-right: 50px;
+}
+nav #navigationBar ul{
+    display: flex;
+    list-style: none;
+}
+nav #navigationBar ul a{
+    text-decoration: none;
+    color: black;
+}
+nav #navigationBar ul li{
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: "Epilogue", sans-serif;
+}
+nav #navigationBar ul .active{
+    color:#1576D6;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: "Epilogue", sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.navbar .logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+}
+.nav-links li .active{
+    color:#1576D6;
+}
+/* Home Section */
+
+#homeSection{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#homeSection #homeSectionText{
+    width: 50%;
+}
+#homeSection #homeSectionText h3{
+    font-family: "Epilogue", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+#homeSection #homeSectionText h1{
+    font-family: "Epilogue", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 90px;
+}
+
+
+/* Services */
+
+#serviceSection{
+    display:flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+}
+#serviceSection .card{
+    padding: 30px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Epilogue", sans-serif;
+   
+
+}
+#serviceSection .card img{
+    width: 50%;
+    padding-bottom: 20px;
+}
+#serviceSection .card h2{
+    padding-bottom: 20px;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+}
+#serviceSection .card p{
+    width: 70%;
+    font-family: "Epilogue", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+
+}
+
+/* Projects Section */
+
+#projectSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-items: center;
+    padding: 50px;
+}
+
+#projectSection .card {
+    padding: 30px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Epilogue", sans-serif;
+}
+#projectSection .card img{
+    width: 80%;
+    padding-bottom: 20px;
+}
+#projectSection .card h2{
+    align-self: flex-start;
+    padding-left: 35px;
+    padding-bottom: 5px;
+}
+#projectSection .card p{
+    align-self: flex-start;
+    padding-left: 35px;
+    padding-bottom: 5px;
+}
+
+/* Clients Section */
+
+#clientsSection{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+#clientsSection .reviewContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 28%;
+    height: 50vh;
+    border: 2px solid #1576D6;
+    margin: 30px;
+}
+#clientsSection .reviewContainer p{
+
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 30px;
+}
+#clientsSection .reviewContainer .rate{
+    /* padding: 30px; */
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    padding-left: 40px;
+    font-family: Epilogue;
+    
+}
+#clientsSection .reviewContainer .rate img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#clientsSection .reviewContainer .rate .stars{
+    margin: 10px;
+}
+
+/* Contact Section */
+#contactSection{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 40px;
+}
+#contactSection #contactData{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+#contactSection #contactData h2{
+    font-family: Epilogue;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+
+}
+#contactSection #contactData p{
+
+    font-family: Epilogue;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    width: 70%;
+
+}
+#contactSection #contactData #socialMedia a{
+    padding: 5px;
+    color: black;
+}
+#contactSection form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#contactSection form input{
+    width: 80%;
+    height: 70px;
+    padding: 10px;
+    border: 0;
+    background-color:#F3F3F3;
+    border-radius: 5px;
+    margin: 5px;
+}
+#contactSection form textarea{
+    width: 80%;
+    padding: 10px;
+    background-color:#F3F3F3;
+    border:0;
+    border-radius: 5px;
+    margin: 5px;
+}
+#contactSection form button{
+    width: 25%;
+    height: 60px;
+    background-color:#2D2D2D;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+@media screen and (min-width:768px)  and (max-width:991px){
+    #homeSection{
+        flex-wrap: wrap;
+    }
+    #homeSection #homeSectionText{
+        width: 100%;
+        text-align: center;
+    }
+    #homeSection #homeSectionText h3{
+        font-size: 30px;
+    }
+    #homeSection #homeSectionText h1{
+        font-size: 70px;
+    }
+    #serviceSection{
+        flex-wrap: wrap;
+    }
+    #serviceSection .card{
+        width:80%;
+    }
+    #serviceSection .card h2{
+        font-size: 35px;
+    }
+    #serviceSection .card p{
+        font-size: 20px;
+    }
+    #projectSection .card{
+        width: 50%;
+    }
+    #projectSection .card h2{
+        font-size: 1.5rem;
+    }
+    #projectSection .card p{
+        font-size: 1.2rem;
+    }
+    #clientsSection .reviewContainer{
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+    #clientsSection .reviewContainer .rate{
+        padding-left: 0;
+    }
+    #contactSection{
+        /* flex-wrap: wrap; */
+        width: 100%;
+        flex-direction: column;
+    }
+    #contactSection #contactData{
+        width: 100%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    #contactSection #contactData h2{
+        font-size: 45px;
+        padding-bottom: 40px;
+    }
+    #contactSection #contactData p{
+        font-size: 25px;
+        width: 90%;
+        line-height: 35px;
+        padding-bottom: 30px;
+    }
+    #contactSection form{
+        width: 100%;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    #contactSection form input{
+        margin: 5px;
+    }
+    #contactSection form textarea{
+        margin: 5px;
+    }
+    #contactSection form button{
+        margin: 20px;
+    }
+
+}
+@media screen and (max-width:767px){
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    #homeSection{
+        flex-wrap: wrap;
+    }
+    #homeSection #homeSectionText{
+        width: 100%;
+        text-align: center;
+    }
+    #homeSection #homeSectionText h3{
+        font-size: 15px;
+    }
+    #homeSection #homeSectionText h1{
+        font-size: 35px;
+    }
+    #homeSection img{
+        width: 100%;
+    }
+    #serviceSection{
+        flex-wrap: wrap;
+    }
+    #serviceSection .card{
+        width:100%;
+    }
+    #projectSection{
+        width: 100%;
+        padding: 0;
+    }
+    #projectSection .card{
+        width: 100%;
+    }
+    #clientsSection{
+        padding: 10px;
+        padding-top: 20px;
+    }
+    #clientsSection .reviewContainer{
+        width: 90%;
+        /* margin: 5px; */
+    }
+    #clientsSection .reviewContainer p{
+        font-size: 1rem;
+    }
+    #clientsSection .reviewContainer .rate{
+        padding-left: 0;
+        align-self: normal;
+    }
+    #clientsSection .reviewContainer .rate h3{
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    #contactSection{
+        /* flex-wrap: wrap; */
+        width: 100%;
+        flex-direction: column;
+    }
+    #contactSection #contactData{
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #contactSection #contactData h2{
+        font-size: 24px;
+        padding-bottom: 40px;
+    }
+    #contactSection #contactData p{
+        font-size: 15px;
+        width: 90%;
+        line-height: 35px;
+        padding-bottom: 30px;
+    }
+    #contactSection #contactData #socialMedia{
+        padding-bottom: 20px;
+    }
+    #contactSection form{
+        width: 100%;
+        align-items: center;
+    }
+    #contactSection form input{
+        margin: 5px;
+        width: 100%;
+    }
+    #contactSection form textarea{
+        margin: 5px;
+        width: 100%;
+    }
+    #contactSection form button{
+        margin: 20px;
+        width: 80%;
+    }
+}

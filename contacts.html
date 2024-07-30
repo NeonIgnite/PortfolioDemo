@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/all.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <ul class="nav-links">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contacts.html"  class="active">Contacts</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+    </nav>
+        <section id="contactSection">
+            <div id="contactData">
+                <h2>Lets Work Together</h2>
+                <p>nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc.</p>
+                <div id="socialMedia">
+                    <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-xl"  ></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-behance fa-xl"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe fa-xl"></i></a>                    
+                </div>
+            </div>
+            <form>
+                <input type="text" placeholder="Enter Your Name Here">
+                <input type="text" placeholder="Enter Your Email Here">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message Here"></textarea>
+                <button>Submit</button>
+
+            </form>
+
+        </section>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                    const menuToggle = document.querySelector('.menu-toggle');
+                    const navLinks = document.querySelector('.nav-links');
+    
+                    menuToggle.addEventListener('click', function () {
+                        navLinks.classList.toggle('active');
+                    });
+                });
+    
+        </script>
+</body>
+</html>
